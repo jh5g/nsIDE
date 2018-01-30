@@ -1,0 +1,4 @@
+main(){
+say("heloo");
+var test@random = 2;
+}
