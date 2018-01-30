@@ -1,0 +1,15 @@
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.exe.config
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nSP.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.exe.manifest
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.exe.manifest
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.application
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.application
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nSP.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nsNodes.dll
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nsNodes.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nsAvancedMathematics.dll
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nsAvancedMathematics.pdb

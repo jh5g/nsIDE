@@ -1,0 +1,6 @@
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\bin\Debug\nsAvancedMathematics.dll
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\bin\Debug\nsAvancedMathematics.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\obj\Debug\nsAvancedMathematics.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\obj\Debug\nsAvancedMathematics.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\obj\Debug\nsAvancedMathematics.dll
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nsAvancedMathematics\obj\Debug\nsAvancedMathematics.pdb

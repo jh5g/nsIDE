@@ -1,0 +1,13 @@
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nSP.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nSP.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.exe.config
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.exe.manifest
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.application
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nodeSCRIPTProfessional.exe.manifest
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nodeSCRIPTProfessional.application
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Release\nodeSCRIPTProfessional.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nsNodes.dll
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nsNodes.pdb

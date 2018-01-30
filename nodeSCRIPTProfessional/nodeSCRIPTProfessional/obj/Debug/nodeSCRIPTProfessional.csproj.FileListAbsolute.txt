@@ -1,0 +1,7 @@
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.exe.config
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Debug\nodeSCRIPTProfessional.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\obj\Debug\nodeSCRIPTProfessional.pdb

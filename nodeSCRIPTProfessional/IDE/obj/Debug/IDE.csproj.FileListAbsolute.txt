@@ -1,0 +1,10 @@
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\bin\Debug\IDE.exe.config
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\bin\Debug\IDE.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\bin\Debug\IDE.pdb
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.Form1.resources
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.Properties.Resources.resources
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.csproj.GenerateResource.Cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.exe
+C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\IDE\obj\Debug\IDE.pdb

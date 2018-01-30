@@ -1,0 +1,19 @@
+main(){
+say("hello");
+if(9 > 2)
+{
+	say("9 is bigger than 2");
+	var testVar@testNode = 2 + 3 + (2-1*2) + findANumber() + "t";
+	if(9 == 9){
+
+		test();
+
+
+		}
+	elif(9 != 9){
+
+		test2();
+
+		}
+	}
+}
