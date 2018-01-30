@@ -19,3 +19,16 @@ C:\nodeSCRIPT\C#\nsIDE\nsIDE\obj\Debug\nsIDE.exe
 C:\nodeSCRIPT\C#\nsIDE\nsIDE\obj\Debug\nsIDE.pdb
 C:\nodeSCRIPT\C#\nsIDE\nsIDE\obj\Debug\nsIDE.nsIDE.resources
 C:\nodeSCRIPT\C#\nsIDE\nsIDE\obj\Debug\nsIDE.Form2.resources
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\nsIDE.exe.config
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\nsIDE.exe
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\nsIDE.pdb
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.csprojResolveAssemblyReference.cache
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.nsIDE.resources
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.Form2.resources
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.Properties.Resources.resources
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.csproj.GenerateResource.Cache
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.csproj.CoreCompileInputs.cache
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.exe
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.pdb
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\ScintillaNET.dll
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\ScintillaNET.xml
