@@ -11,9 +11,9 @@ namespace nsNodes
         public string NodeType { get; set; }
         public string Contents { get; set; }
         public List<string> Instructions { get; set; }
-        public Dictionary<string, string> Variables = new Dictionary<string, string>();
+        public Dictionary<string, string> Variables = new Dictionary<string, string>(); // Variables example {"testVar", "int:12"} this would be called as testNode.Variables["testVar"]
 
-        static Dictionary<string, Node> allNodes = new Dictionary<string, Node>();
+        static Dictionary<string, Node> allNodes = new Dictionary<string, Node>(); // All nodes example: {"testNode": testNode}
 
         public Node(string type, string nodeName, List<string> Instructions, string rawContents)
         {
@@ -21,10 +21,18 @@ namespace nsNodes
             this.Contents = rawContents;
             this.Instructions = Instructions;
             allNodes[nodeName] = this;
-            //if (this.NodeType == "normal")
-            //{
-
-            //}
+            if (this.NodeType == "bank")
+            {
+                // * types
+            }
+            else if (this.NodeType == "tree")
+            {
+                // * types, inheritance
+            }
+            else if (this.NodeType == "neural")
+            {
+                // Special, limited types && methods for learning
+            }
         }
 
         public void AddVariable(string varName, string varValue, string nodeName)
