@@ -1,0 +1,14 @@
+main()
+{
+
+	node Test 
+	{
+		var : string TestString = "test";
+	}
+
+	while(true)
+	{
+		say(TestString);
+	}
+
+}

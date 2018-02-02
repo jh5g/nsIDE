@@ -32,3 +32,5 @@ C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.exe
 C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.pdb
 C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\ScintillaNET.dll
 C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\ScintillaNET.xml
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\bin\Debug\EPFramework.dll
+C:\Users\TorinPC\source\repos\nsIDE-master\nsIDE\nsIDE\obj\Debug\nsIDE.csproj.nsIDE.exe.config

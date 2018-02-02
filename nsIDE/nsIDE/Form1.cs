@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using nodeSCRIPTResources;
 
 namespace nsIDE
 {
@@ -26,14 +27,18 @@ namespace nsIDE
 
 
             Input.StyleResetDefault();
-            Input.Styles[Style.Default].BackColor = Color.FromArgb(30, 30, 30);
-            Input.Styles[Style.Default].ForeColor = Color.White;
-            Input.Styles[Style.Default].Size = 14;
+            Input.Styles[Style.Default].BackColor = Color.White;
+            Input.Styles[Style.Default].ForeColor = Color.Black;
+            Input.Styles[Style.Default].Font = "consolas";
+            Input.Styles[Style.Default].Size = 16;
             Input.ScrollWidth = 1;
             Input.ScrollWidthTracking = true;
             Input.StyleClearAll();
-            Input.Styles[Style.LineNumber].BackColor = Color.FromArgb(30, 30, 30);
-            Input.Styles[Style.LineNumber].ForeColor = Color.FromArgb(40, 145, 175);
+            Input.Styles[Style.LineNumber].BackColor = Color.White;
+            Input.Styles[Style.LineNumber].ForeColor = Color.Black;
+            Input.Styles[Style.LineNumber].Font = "consolas";
+
+
 
 
 
@@ -51,22 +56,22 @@ namespace nsIDE
             // string highlighting
             //
             Input.Styles[Style.Cpp.String].Font = "Consolas";
-            Input.Styles[Style.Cpp.String].ForeColor = Color.FromArgb(163, 21, 21); // Red
+            Input.Styles[Style.Cpp.String].ForeColor = Color.FromArgb(13, 14, 250); // Red
             Input.Styles[Style.Cpp.Default].ForeColor = Color.Silver;
-            Input.Styles[Style.Cpp.Comment].ForeColor = Color.FromArgb(0, 128, 0); // Green
-            Input.Styles[Style.Cpp.CommentLine].ForeColor = Color.FromArgb(0, 128, 0); // Green
+            Input.Styles[Style.Cpp.Comment].ForeColor = Color.FromArgb(21, 151, 26); // Green
+            Input.Styles[Style.Cpp.CommentLine].ForeColor = Color.FromArgb(21, 151, 26); // Green
             Input.Styles[Style.Cpp.CommentLineDoc].ForeColor = Color.FromArgb(128, 128, 128); // Gray
             Input.Styles[Style.Cpp.Number].ForeColor = Color.Olive;
-            Input.Styles[Style.Cpp.Word].ForeColor = Color.FromArgb(78, 171, 110); // group 0
-            Input.Styles[Style.Cpp.Word2].ForeColor = Color.FromArgb(58, 136, 212);
+            Input.Styles[Style.Cpp.Word].ForeColor = Color.FromArgb(7, 8, 148); // group 0
+            Input.Styles[Style.Cpp.Word2].ForeColor = Color.DarkCyan;
             Input.Styles[Style.Cpp.String].ForeColor = Color.FromArgb(163, 21, 21); // Red
             Input.Styles[Style.Cpp.Character].ForeColor = Color.FromArgb(163, 21, 21); // Red
             Input.Styles[Style.Cpp.Verbatim].ForeColor = Color.FromArgb(163, 21, 21); // Red
-            Input.Styles[Style.Cpp.StringEol].BackColor = Color.Pink;
-            Input.Styles[Style.Cpp.Operator].ForeColor = Color.Purple;
+            Input.Styles[Style.Cpp.StringEol].BackColor = Color.Red;
+            Input.Styles[Style.Cpp.Operator].ForeColor = Color.Red;
             Input.Styles[Style.Cpp.Preprocessor].ForeColor = Color.Maroon;
-            Input.SetKeywords(0, "main node while for foreach");
-            Input.SetKeywords(1, "var obj object variable if");
+            Input.SetKeywords(0, "main node while for foreach var obj object variable if");
+            Input.SetKeywords(1, "string int double char null");
 
             Input.SetProperty("fold", "1");
             Input.SetProperty("fold.compact", "1");
@@ -76,14 +81,14 @@ namespace nsIDE
             Input.Margins[2].Mask = Marker.MaskFolders;
             Input.Margins[2].Sensitive = true;
             Input.Margins[2].Width = 20;
-            Input.SetFoldMarginColor(true, Color.FromArgb(30, 30, 30));
-            Input.SetFoldMarginHighlightColor(true, Color.FromArgb(30, 30, 30));
+            Input.SetFoldMarginColor(true, Color.White);
+            Input.SetFoldMarginHighlightColor(true, Color.White);
 
 
             // Set colors for all folding markers
             for (int i = 25; i <= 31; i++)
             {
-                Input.Markers[i].SetForeColor(Color.FromArgb(30, 30, 30));
+                Input.Markers[i].SetForeColor(Color.Transparent);
                 Input.Markers[i].SetBackColor(Color.FromArgb(189, 192, 198));
             }
 
@@ -99,10 +104,78 @@ namespace nsIDE
             // Enable automatic folding
             Input.AutomaticFold = (AutomaticFold.Show | AutomaticFold.Click | AutomaticFold.Change);
 
+            menuStrip1.BackColor = Color.White;
+            menuStrip1.ForeColor = Color.Black;
+            toolStrip1.BackColor = Color.White;
+            toolStrip1.ForeColor = Color.Black;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Input.IndentWidth = 4;
+            this.Input.TabWidth = 4;
+            //menuStrip1.Renderer = new renderer();
+        }
+
+        /*
+        private class renderer : ToolStripProfessionalRenderer
+        {
+            public renderer() : base(new cols()) { }
+        }
+
+        private class cols : ProfessionalColorTable
+        {
+            public override Color MenuItemSelected
+            {
+                // when the menu is selected
+                get { return Color.FromArgb(60, 60, 60); }
+            }
+
+           
+
+            public override Color MenuBorder  //added for changing the menu border
+            {
+                get { return Color.FromArgb(37, 37, 38); }
+            }
+
+            public override Color MenuItemSelectedGradientBegin
+            {
+                get { return Color.FromArgb(37, 37, 38); }
+            }
+            public override Color MenuItemSelectedGradientEnd
+            {
+                get { return Color.FromArgb(37, 37, 38); }
+            }
+
+            public override Color ToolStripDropDownBackground
+            {
+                get
+                {
+                    return Color.FromArgb(27, 27, 28);
+                }
+            }
+
+        }
+        */
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (this.Text.Substring(this.Text.Length - 1) == "*")
+            {
+                DialogResult saveQuery = MessageBox.Show(fileName + " is has not been saved.\nDo you want to save it?", "Unsaved Work", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (saveQuery == DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                    Save();
+                    this.Close();
+                }
+                else if (saveQuery == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+
+            }
 
         }
 
@@ -121,23 +194,57 @@ namespace nsIDE
             {
                 if (fileName != "Untitled")
                 {
+                    /*
                     var proc = new Process
                     {
                         StartInfo = new ProcessStartInfo
                         {
-                            FileName = Properties.Settings.Default.Path,
-                            Arguments = fileName,
+                            FileName = "C:\\Users\\TorinPC\\source\\repos\\nodeSCRIPTProfessional\\nodeSCRIPTProfessional\\bin\\Release\\nodeSCRIPTProfessional.exe",
+                            Arguments = "C:\\Users\\TorinPC\\source\\repos\\nodeSCRIPTProfessional\\nodeSCRIPTProfessional\\bin\\Release\\test.txt",
                             UseShellExecute = false,
                             RedirectStandardOutput = true,
                             CreateNoWindow = true
                         }
                     };
-                    proc.Start();
-                    while (!! proc.StandardOutput.EndOfStream)
+                    int count = 0;
+                    bool valid = true;
+                    while (valid)
                     {
+                        if (count == 0)
+                        {
+                            Console.WriteLine("PROCESS STARTED\n");
+
+                            proc.Start();
+                        }
                         string line = proc.StandardOutput.ReadLine();
                         Output.Text += line;
+                        if (proc.StandardOutput.EndOfStream)
+                        {
+                            valid = false;
+                        }
+                        count += 1;
                     }
+                    */
+
+                    ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\nodeSCRIPTProfessional.exe", @"C:\Users\TorinPC\source\repos\nodeSCRIPTProfessional\nodeSCRIPTProfessional\bin\Release\test.txt");
+                    startInfo.WorkingDirectory = "C:\\Users\\TorinPC\\source\\repos\\nodeSCRIPTProfessional\\nodeSCRIPTProfessional\\bin\\Release\\";
+                    startInfo.RedirectStandardOutput = true;
+                    startInfo.UseShellExecute = false;
+                    startInfo.CreateNoWindow = true;
+
+                    Process process = new Process();
+                    process.StartInfo = startInfo;
+                    process.EnableRaisingEvents = false;
+                    process.Start();
+
+                    StreamReader outputReader = process.StandardOutput;
+
+                    Output.Text = outputReader.ReadToEnd();
+
+                    process.WaitForExit();
+                    process.Close();
+
+
                 }
                 else
                 {
@@ -202,17 +309,18 @@ namespace nsIDE
                     } while (line != null);
                 }
                 file.Close();
+                this.Text = "nsIDE - " + fileName;
             }
             else
             {
-                MessageBox.Show("This file Should be saved using Save As, look under File", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SaveAs();
             }
         }
         private void Open()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-            openFileDialog1.Filter = "ns files (*.ns)|*.ns";
+            openFileDialog1.Filter = "NS File (*.ns)|*.ns";
             openFileDialog1.FilterIndex = 2;
             openFileDialog1.RestoreDirectory = true;
 
@@ -290,6 +398,7 @@ namespace nsIDE
         private int maxLineNumberCharLength;
         private void Input_TextChanged(object sender, EventArgs e)
         {
+            this.Text = "nsIDE - " + fileName + "*";
             // Did the number of characters in the line number display change?
             // i.e. nnn VS nn, or nnnn VS nn, etc...
             var maxLineNumberCharLength = Input.Lines.Count.ToString().Length;
@@ -301,10 +410,12 @@ namespace nsIDE
             const int padding = 2;
             Input.Margins[0].Width = Input.TextWidth(Style.LineNumber, new string('9', maxLineNumberCharLength + 1)) + padding;
             this.maxLineNumberCharLength = maxLineNumberCharLength;
+
         }
 
         private void Input_CharAdded(object sender, CharAddedEventArgs e)
         {
+            
             // Find the word start
             var currentPos = Input.CurrentPosition;
             var wordStartPos = Input.WordStartPosition(currentPos, true);
@@ -316,6 +427,21 @@ namespace nsIDE
                 if (!Input.AutoCActive)
                     Input.AutoCShow(lenEntered, "main node var obj if while for foreach");
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Input_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Output_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
