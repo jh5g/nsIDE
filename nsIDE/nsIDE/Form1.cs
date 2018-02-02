@@ -10,18 +10,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using nodeSCRIPTResources;
+//using nodeSCRIPTResources;
 
 namespace nsIDE
 {
     public partial class nsIDE : Form
     {
+        int NumCurlBrack { get; set; }
         static bool keyControl = false;
         static bool keyS = false;
 
         static string fileName = "Untitled";
         public nsIDE()
         {
+            NumCurlBrack = 0;
             InitializeComponent();
             this.Text += " - " + fileName;
 
@@ -318,6 +320,7 @@ namespace nsIDE
         }
         private void Open()
         {
+            
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             openFileDialog1.Filter = "NS File (*.ns)|*.ns";
@@ -329,13 +332,48 @@ namespace nsIDE
                 fileName = openFileDialog1.FileName.ToString();
                 Input.Text = File.ReadAllText(fileName);
             }
+            this.NumCurlBrack = 0;
             this.Text = "nsIDE - " + fileName;
+            foreach (char currChar in Input.Text)
+            {
+                if (currChar == '{')
+                {
+                    this.NumCurlBrack += 1;
+                }
+                if (currChar == '}')
+                {
+                    this.NumCurlBrack -= 1;
+                }
+            }
         }
         public void New()
         {
+            this.NumCurlBrack = 0;
             Input.Text = "";
             fileName = "Untitled";
             this.Text = "nsIDE - " + fileName;
+        }
+
+        public int getNumCurlBrack()
+        {
+            int NumCurlBrackLocal = 0;
+            int caretPosition = Input.SelectionStart;
+
+            // now find all text that occurs before the caret
+            string textUpToCaret = Input.Text.Substring(0, caretPosition);
+            foreach (char currChar in textUpToCaret)
+            {
+                if (currChar == '{')
+                {
+                    NumCurlBrackLocal += 1;
+                }
+                if (currChar == '}')
+                {
+                    NumCurlBrackLocal -= 1;
+                }
+                
+            }
+            return NumCurlBrackLocal;
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -353,36 +391,6 @@ namespace nsIDE
             Open();
         }
 
-
-
-        private void nsIDE_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Control)
-            {
-                keyControl = true;
-            }
-            if (e.KeyCode == Keys.S)
-            {
-                keyS = true;
-            }
-
-            if (keyS && keyControl)
-            {
-                Save();
-            }
-        }
-
-        private void nsIDE_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Control)
-            {
-                keyControl = false;
-            }
-            if (e.KeyCode == Keys.S)
-            {
-                keyS = false;
-            }
-        }
 
         private void setNodeSCRIPTPathToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -442,6 +450,23 @@ namespace nsIDE
         private void Output_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void nsIDE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
+        private void nsIDE_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "Return")
+            {
+                this.NumCurlBrack = getNumCurlBrack();
+                for (int i = 0; i < this.NumCurlBrack; i++)
+                {
+                    Output.Text = this.NumCurlBrack.ToString();
+                    SendKeys.Send("{TAB}");
+                }
+            }
         }
     }
 }
